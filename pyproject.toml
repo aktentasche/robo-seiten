@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nicolas"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+loguru = "^0.7.2"
+bs4 = "^0.0.1"
+requests = "^2.31.0"
+markdown = "^3.5"
+reportlab = "^4.0.6"
+selenium = "^4.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
