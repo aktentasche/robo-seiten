@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
         for url, text in url_text_dict_unique.items():
             foldername = os.path.join(
-                "website-texts", current_time, website_url.replace("https://", "")
+                "website-texts", website_url.replace("https://", ""), current_time
             )
             os.makedirs(foldername, exist_ok=True)
 
