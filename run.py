@@ -1,7 +1,8 @@
+import datetime
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+from datetime import datetime
 from urllib.parse import urlparse
 from loguru import logger
 from websites import websites
@@ -64,9 +65,13 @@ if __name__ == "__main__":
 
         logger.info("Speichere Textdateien...")
 
+        current_time = datetime.now().strftime("%d-%m-%Y_%H-%M-%S")
+
+        logger.debug(f"{current_time=}")
+
         for url, text in url_text_dict_unique.items():
             foldername = os.path.join(
-                "website-texts", website_url.replace("https://", "")
+                "website-texts", current_time, website_url.replace("https://", "")
             )
             os.makedirs(foldername, exist_ok=True)
 
