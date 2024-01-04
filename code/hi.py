@@ -5,7 +5,7 @@ from datetime import datetime
 from loguru import logger
 import yaml
 from browser import get_browser
-from website import extract_all
+from website import extract_all, save_html
 from configuration import Configuration
 import msvcrt
 
@@ -38,6 +38,14 @@ if __name__ == "__main__":
         root_website_content = extract_all(
             browser, config.maximum_depth, 0, website_url, []
         )
+
+        filename = (
+            website_url.replace("https://", "")
+            .replace("https://", "")
+            .replace("/", "__")
+        )
+
+        save_html(root_website_content, f"{filename}.html")
 
     die()
 
