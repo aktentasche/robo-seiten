@@ -1,0 +1,3 @@
+echo Neueste Version wird heruntergeladen...
+git pull
+pause
