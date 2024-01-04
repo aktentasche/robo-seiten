@@ -18,4 +18,4 @@ class Configuration:
 
     @classmethod
     def random_cfg(cls):
-        return cls(urls=["https://www.google.de"], maximum_depth=5)
+        return cls(urls=["https://www.haekelschwein.de"], maximum_depth=3)
