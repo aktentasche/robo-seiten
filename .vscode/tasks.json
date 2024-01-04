@@ -1,2 +1,2 @@
 poetry export -f requirements.txt --output requirements.txt
-pyinstaller.exe code/hi.py
+pyinstaller.exe --distpath . code/hi.py

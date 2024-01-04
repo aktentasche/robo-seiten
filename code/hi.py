@@ -5,13 +5,13 @@ import yaml
 from code.browser import get_browser
 from code.website import extract_all, save_html
 from code.configuration import Configuration
-import msvcrt
+import sys
 
 
 def die():
-    logger.info("Zum Verlassen beliebige Taste drücken...")
-    msvcrt.getch()
-    exit()
+    logger.info("Zum Verlassen Enter Taste drücken...")
+    input()
+    sys.exit()
 
 
 if __name__ == "__main__":
