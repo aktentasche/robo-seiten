@@ -1,3 +1,3 @@
-echo Neueste Version wird heruntergeladen...
-git pull
-pause
+@echo Neueste Version wird heruntergeladen...
+@git pull
+@pause
