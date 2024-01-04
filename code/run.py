@@ -3,9 +3,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from datetime import datetime
-from urllib.parse import urlparse
 from loguru import logger
-from websites import websites
 
 
 MAX_DEPTH = 2
