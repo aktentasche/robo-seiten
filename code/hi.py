@@ -1,12 +1,10 @@
-import datetime
-import os
 from selenium import webdriver
 from datetime import datetime
 from loguru import logger
 import yaml
-from browser import get_browser
-from website import extract_all, save_html
-from configuration import Configuration
+from code.browser import get_browser
+from code.website import extract_all, save_html
+from code.configuration import Configuration
 import msvcrt
 
 
