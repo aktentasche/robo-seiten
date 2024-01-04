@@ -3,7 +3,7 @@
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports.isort": true
+            "source.organizeImports.isort": "explicit"
         },
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
